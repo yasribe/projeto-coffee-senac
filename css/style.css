@@ -270,3 +270,34 @@ section{
     text-transform: none;
     background:none;
 }
+
+/*Pág ambiente*/
+
+.ambiente .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap:1.5rem;
+}
+
+.ambiente .box-container .box{
+    border:var(--border);  
+    margin-bottom: 20px;  
+}
+
+.ambiente .box-container .box .image{
+    height: 25rem;
+    overflow:hidden;
+    width: 100%;
+}
+
+.ambiente .box-container .box .image img{
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.ambiente .box-container .box:hover .image img{
+    transform: scale(1.2);
+}
+
+/*rodapé*/
