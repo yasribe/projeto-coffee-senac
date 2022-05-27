@@ -1,13 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
 
-*{
-    font-family: 'Roboto', sans-serif;
-    margin: 0; padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    transition: 2s linear;
-}
-
 :root{
     --main-color:#88653ec9;
     --black:#221909;
@@ -15,12 +7,22 @@
     --border:.1rem solid #ffffff4d;
 }
 /*Principal*/
-html{
-    font-size: 62%;
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-    scroll-padding-top: 9rem;
+*{
+    font-family: 'Roboto', sans-serif;
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .2s linear;
 }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+}
+
 html::-webkit-scrollbar{
     width: .8rem;
 }
@@ -30,7 +32,7 @@ html::-webkit-scrollbar-track{
 }
 
 html::-webkit-scrollbar-thumb{
-    background: #d30f0f;
+    background: #fff;
     border-radius: 5rem;
 }
 
@@ -38,7 +40,9 @@ body{
     background: var(--bg);
 }
 
-/*topo das paginas e botões*/
+section{
+    padding:2rem 7%;
+}
 
 .heading{
     text-align: center;
@@ -136,4 +140,37 @@ body{
     line-height: 1.8;
     padding:1rem 0;
     color:#eee;
+}
+
+/*PÁG HISTORIA --> sobre*/
+
+.sobre .linha{
+    display: flex;
+    align-items: center;
+    background:var(--black);
+    flex-wrap: wrap;
+}
+
+.sobre .linha .image{
+    flex:1 1 45rem;
+}
+
+.sobre .linha .image img{
+    width: 100%;
+}
+.sobre .linha .conteudo{
+    flex:1 1 45rem;
+    padding:2rem;
+}
+
+.sobre .linha .conteudo h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.sobre .linha .conteudo p{
+    font-size: 1.6rem;
+    color:#ccc;
+    padding:1rem 0;
+    line-height: 1.8;
 }
