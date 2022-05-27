@@ -121,13 +121,13 @@ section{
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background:url(/imagens/home.jpg) no-repeat;
+    background:url(../imagens/home.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
 
 .home .conteudo{
-    max-width: 60rem;
+    max-width:  60rem;
 }
 
 .home .conteudo h3{
